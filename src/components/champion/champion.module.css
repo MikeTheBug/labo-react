@@ -1,0 +1,12 @@
+.champions {
+    display: flex;
+    justify-content: center;
+}
+
+.champions ul {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
