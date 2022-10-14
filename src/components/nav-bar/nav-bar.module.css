@@ -8,11 +8,16 @@
 .navi {
     display: flex;
     font-weight: bold;
-    margin-right: 60px;
+    font-size: 1.2em;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 0.5em;
+    text-decoration: none;
 }
+
 
 .navBar ul {
     display: flex;
     flex: 1;
-    margin-left: 100px;
+    gap: 3em;
 }

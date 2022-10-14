@@ -1,0 +1,16 @@
+.search {
+    display: flex;
+}
+
+.search img {
+    width: 20px;
+    margin-left: 2em;
+    padding: 0.3em;
+    padding-top: 0.8em;
+}
+
+.search p {
+    padding: 0.3em;
+    padding-top: 0.5em;
+    margin-left: -8px;
+}

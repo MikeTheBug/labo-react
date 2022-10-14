@@ -3,9 +3,15 @@ import axios from 'axios';
 import ChampionItem from './champion-item';
 import style from './champion.module.css'
 
-const Champions = () => {
+const Champions = (props) => {
+
+    const { championName } = props
 
     const [data, SetData] = useState([]);
+    let dataFiltered = data
+    if (championName !== "" && data.length > 0) {
+        dataFiltered = dataFiltered.filter(el => el.name.toLowerCase().includes(championName))
+    }
 
     useEffect(() => {
         axios
@@ -25,7 +31,7 @@ const Champions = () => {
     return (
         <div className={style.champions}>
             <ul>
-                {data.map((champion, index) => (
+                {dataFiltered.map((champion, index) => (
                 <ChampionItem key={index} champion={champion}/>
                 ))}
             </ul>

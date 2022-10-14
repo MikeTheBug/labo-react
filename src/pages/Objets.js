@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../components/header/header";
 
-const Objects = () => {
+const Objets = () => {
   return (
     <div>
       <Header/>
-      <h1>Objects</h1>
+      <h1>Objets</h1>
       <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
@@ -34,4 +34,4 @@ const Objects = () => {
   );
 };
 
-export default Objects;
+export default Objets;
