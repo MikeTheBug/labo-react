@@ -1,0 +1,9 @@
+https://developer.riotgames.com/docs/lol#data-dragon_champions
+
+http://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion.json
+
+https://ddragon.leagueoflegends.com/cdn/12.19.1/data/fr_FR/champion.json
+
+http://ddragon.leagueoflegends.com/cdn/12.19.1/data/en_US/champion/Aatrox.json
+
+https://www.figma.com/file/kg9fdd3fAB0wKMEMbdasKt/Labo-Web-10.22?node-id=0%3A3
