@@ -1,6 +1,7 @@
 .champions {
     display: flex;
     justify-content: center;
+    background-image: url("../../../public/flammes.jpg");
 }
 
 .champions ul {

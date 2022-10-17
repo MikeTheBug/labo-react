@@ -5,12 +5,15 @@ import style from './champion.module.css'
 
 const Champions = (props) => {
 
-    const { championName } = props
+    const { championName, championRole } = props
 
     const [data, SetData] = useState([]);
     let dataFiltered = data
-    if (championName !== "" && data.length > 0) {
+    if (championRole === undefined && championName !== "" && data.length > 0) {
         dataFiltered = dataFiltered.filter(el => el.name.toLowerCase().includes(championName))
+    }
+    if (championRole) {
+        dataFiltered = dataFiltered.filter(el => el.tags.includes(championRole))
     }
 
     useEffect(() => {
@@ -20,7 +23,6 @@ const Champions = (props) => {
             const champions = res.data.data
             const result = []
             for (const attribute in champions) {
-                console.log(champions[attribute])
                 result.push(champions[attribute])
             }
             SetData(result)

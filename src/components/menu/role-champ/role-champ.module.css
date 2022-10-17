@@ -1,0 +1,11 @@
+.navChamp {
+    display: flex;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.navChamp li:hover {
+    border-bottom: 0.5em solid aqua;
+    border-top: 0.5em solid aqua;
+    border-radius: 10px;
+}

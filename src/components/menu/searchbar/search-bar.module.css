@@ -1,10 +1,10 @@
 .search {
     display: flex;
+    width: 200px;
 }
 
 .search img {
     width: 20px;
-    margin-left: 2em;
     padding: 0.3em;
     padding-top: 0.8em;
 }

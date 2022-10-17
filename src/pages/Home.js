@@ -7,19 +7,25 @@ import Menu from "../components/menu/menu";
 const Home = () => {
 
   const [championName, setChampionName] = useState("")
+  const [championRole, setChampionRole] = useState()
 
   console.log(championName);
     
   const searchChampion = (c) => {
       setChampionName(c)
+      setChampionRole(undefined)
+  }
+
+  const roleChampion = (r) => {
+      setChampionRole(r)
   }
 
   return (
     <div>
       <Header/>
       <Annonce/>
-      <Menu onSearchUp={searchChampion}/>
-      <Champions championName={championName}/>
+      <Menu onSearchUp={searchChampion} role={roleChampion}/>
+      <Champions championName={championName} championRole={championRole}/>
     </div>
   );
 };

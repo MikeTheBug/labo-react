@@ -4,13 +4,13 @@
     margin-bottom: 4em;
 }
 
-.menu ul {
-    border: solid 1px rgba(209, 202, 202, 0.653);
-}
-
 .menu ul li{
     display: flex;
-    gap: 3em;
     align-items: center;
-    margin-right: 8em;
+    margin-right: 3em;
+}
+
+.menu ul li:first-child{
+    align-items: center;
+    margin-left: 3em;
 }
