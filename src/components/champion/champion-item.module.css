@@ -2,6 +2,14 @@
     width: 200px;
 }
 
+.portrait {
+    transition: transform 0.2s ease-in-out;
+}
+
+.portrait:hover {
+    transform: scale(1.05);
+}
+
 .portrait h2 {
     background-color: black;
     color: white;
@@ -10,5 +18,4 @@
     padding-bottom: 5px;
     text-transform: uppercase;
     font-style: italic;
-
 }

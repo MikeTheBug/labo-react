@@ -1,6 +1,4 @@
-import { NavLink } from "react-router-dom"
 import style from "./role-champ.module.css"
-
 
 const RoleChamp = (props) => {
     
@@ -11,12 +9,10 @@ const RoleChamp = (props) => {
     
     return (
         <div>
-            <ul>
-                <NavLink to="/" className={style.navChamp}>
-                    {listRoleFr.map(
-                        (element, indice) => <li key={indice} onClick={() => championRole(listRole[indice])}>{element}</li>
-                    )}
-                </NavLink>              
+            <ul className={style.navChamp}>
+                {listRoleFr.map(
+                    (element, indice) => <li key={indice} onClick={() => championRole(listRole[indice])}>{element}</li>
+                )}            
             </ul>
         </div>
     )

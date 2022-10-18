@@ -1,7 +1,8 @@
 .navChamp {
     display: flex;
     text-decoration: none;
-    gap: 1rem;
+    gap: 0.5rem;
+    font-weight: bold;
 }
 
 .navChamp li:hover {

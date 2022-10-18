@@ -34,7 +34,7 @@ const Champions = (props) => {
         <div className={style.champions}>
             <ul>
                 {dataFiltered.map((champion, index) => (
-                <ChampionItem key={index} champion={champion}/>
+                <li key={index}><ChampionItem champion={champion}/></li>
                 ))}
             </ul>
         </div>

@@ -14,13 +14,11 @@ const SearchBar = (props) => {
     }
 
     return (
-        <div>
-            <ul className={style.search}>
-                <img src='./loupe.png'/>
-                <p>
-                    <input type="text" value={championName} onChange={e => setChampionName(e.target.value)} onKeyUp={handleEnter}/>
-                </p>
-            </ul>
+        <div className={style.search}>
+            <img src='./loupe.png'/>
+            <p>
+                <input type="text" value={championName} onChange={e => setChampionName(e.target.value)} onKeyUp={handleEnter}/>
+            </p>
         </div>
     );
 };
